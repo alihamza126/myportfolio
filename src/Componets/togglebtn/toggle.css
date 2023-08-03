@@ -1,0 +1,22 @@
+.toggle{
+   
+    border: 3px solid var(--orange);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 2px;
+    position: relative;
+    cursor: pointer;
+}
+.toggle>*{
+    width: 1rem;
+    height: 1rem;
+}
+.btn{
+    background: var(--orange);
+    border-radius: 100%;
+    position: absolute;
+}
+.toggle .btn{
+    transition: all 2s ease;
+}

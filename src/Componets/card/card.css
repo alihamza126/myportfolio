@@ -1,0 +1,46 @@
+.card{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .65);
+    border: 7px solid var(--orangecard);
+    border-radius: 20px;
+    padding: 0px 26px 12px 26px;
+}
+.card>:nth-child(3)
+{
+    font-style: 16px;
+    color:var(--grey);   
+}
+.card>:nth-child(1)
+{
+    transform: scale(.6);
+    margin-bottom: -3rem;
+    margin-top: -1rem;  
+}
+.card>:nth-child(4)>button{
+    background: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0px 19px 60px rgba(99, 97, 97, 0.08);
+    outline: none;
+    border: none;
+    color: #5290fd;
+    font-style: 16px;
+}
+.card>a button:hover{
+    cursor: pointer;
+    color: #5291fdc2;
+}
+@media (max-width:420px) {
+        .card{
+            width: auto;
+            
+        }
+        .card>*{
+            font-weight:500;
+        }
+
+}

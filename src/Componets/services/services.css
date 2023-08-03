@@ -1,0 +1,102 @@
+.services {
+    display: flex;
+    height: 90vh;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+}
+
+.s-left {
+    flex: 1;
+}
+
+.s-intro {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 0px 3rem;
+}
+
+.s-intro>:nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.s-intro>:nth-child(2) {
+    color: var(--orange);
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 2.5rem;
+
+}
+
+.s-intro>:nth-child(3) {
+    color: var(--grey);
+    font-weight: 100;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    line-height: 23.4px;
+}
+
+.s-button {
+    margin-left: 20px;
+    margin-top: 40px;
+    position: relative;
+    width: 8rem;
+    height: 2.5rem;
+    margin-top: 66px;
+}
+
+
+
+
+.s-right {
+    position: relative;
+    flex: 1;  
+}
+.s-right>*{
+    position: absolute;
+}
+.s-blur1{
+    top: 16rem;
+    left: 13rem;
+}
+.s-blur2{
+    top: 19rem;
+    left: -29rem;
+}
+
+@media (max-width:420px) {
+        .services{
+            margin-top: 25rem;
+            flex-direction: column;
+            padding: .5rem -2rem !important;
+            height: 85rem;
+        }
+        .services .s-intro >:nth-child(1){
+            font-size: 2.1rem;
+            color:var(--black);
+            position: relative;
+            font-weight: bolder;
+        }
+        .services .s-intro >:nth-child(2){
+            font-weight: bolder;
+            margin-left: 1.7rem;
+        }
+        .services .s-intro >:nth-child(13){
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        .s-right{
+            display: flex;
+            flex-direction: column;
+            gap: 22rem;
+            margin-top: 4rem;
+        }
+        .s-right>*{
+            position: static;
+            gap: 5rem;
+        }
+}

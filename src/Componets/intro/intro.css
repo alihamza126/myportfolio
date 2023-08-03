@@ -1,0 +1,149 @@
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    height: 77vh;
+    margin-top: 6rem;
+}
+.i-left{
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+.i-name>:nth-child(1)
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--black);
+}
+.i-name>:nth-child(2)
+{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--orange);
+    margin-left: 4%;
+    padding-top: 10px;
+}
+.i-name>:nth-child(3)
+{
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--gray);
+    margin-top: 10px;
+}
+.i-button{
+    width: 6rem;
+    height: 2rem;
+}
+
+.i-icons{
+    display: flex;
+    gap: 0;
+    margin-top: 3rem;
+}
+
+.i-icons>*{
+    transform: scale(.5);
+    transition: all .3s ease-out;
+}
+.i-icons>img:hover{
+    cursor: pointer;
+}
+.i-icons>:hover{
+    transform: scale(.4);
+}
+
+
+/* ----------------------- */
+.i-right{
+    flex: 1;
+    position: relative;
+}
+
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+.i-right>:nth-child(1)
+{
+    transform: scale(.69);
+    left: -15%;
+    top: -9%;
+}
+.i-right>:nth-child(2){
+    transform: scale(.67);
+    top: -4.5rem;
+    left: -3rem;
+}
+.i-right>:nth-child(3)
+{
+    transform: scale(.39);
+    left: -32%;
+    top: -94%;
+    border-radius: 19%;
+}
+.i-right>:nth-child(4){
+    transform: scale(.6);
+    border-radius: 50%;
+    position: absolute;
+    left: -24%;
+    top: -19%;
+    padding: 0;
+}
+.i-blur{
+    position: absolute;
+    width: 25rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -11;
+    top: -18%;
+    left: 56%;
+    filter: blur(96px);
+}
+
+
+@media (max-width:420px) {
+    .intro{
+        flex-direction: column;
+        height: 26rem;
+    }
+    .i-left .introtext{
+        color:var(--black);
+        font-size: 1rem;
+        text-align: justify;
+    }
+    .i-right{
+        transform: scale(.7);
+        flex-direction: column;
+        margin-top: 3rem;
+        padding: 1rem 1rem;
+        position: relative;
+    }
+    .i-right >:nth-child(3){
+        top:-20.7rem;
+        left:-8.4rem;
+    }
+    .i-right .crown >*{
+        position: absolute;
+            top: 3rem;
+            left: 1rem;
+        margin-top: -8rem;
+        margin-left: -14rem;
+        background-color: var(--purple);
+    }
+    .i-right .thumbup
+    {
+            margin-top: 3rem;
+
+    }
+    
+}
+
