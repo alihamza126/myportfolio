@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Componets/Navbar/Navbar';
 import Intro from './Componets/intro/Intro';
@@ -11,7 +10,7 @@ import Footer from './Componets/footer/Footer';
 import { themeContext } from './Context';
 import { useContext } from 'react';
 import Testimonial from './Componets/testimonial/Testimonial';
-import Particles from 'react-particles';
+
 
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
   return (
     <div className="app"
     style={{background:darkMode?'var(--bg)':'',
-            color:darkMode?'white':''
+            color:darkMode?'white':'',
     }}
     >
       <Navbar/> 
@@ -32,10 +31,7 @@ function App() {
       <Testimonial/>
         <Contact/>
         <Footer/>
-
-        <Particles>
-          
-        </Particles>
+        {/* <Particle/> */}
     </div>
   );
 }

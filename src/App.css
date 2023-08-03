@@ -46,4 +46,16 @@
     .app{
       padding:0.5rem 1rem !important;
     }
+    .t-blur2{
+      display: none;
+    }
+    .t-blur1{
+      width: 1rem important;
+      left: 0;
+    }
+    .i-blur {
+      position: absolute;
+      width: 18rem !important;
+      height: 20rem;
+    }
 }

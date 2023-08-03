@@ -87,7 +87,7 @@
     .right-works{
         display: flex;
         align-items: flex-start;
-        justify-content: start;
+        justify-content:flex-start;
         transform: scale(.8);
     }
     .w-maincircule{
